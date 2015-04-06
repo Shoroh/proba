@@ -1,6 +1,6 @@
-class CreateVisaruns < ActiveRecord::Migration
+class CreatePosts < ActiveRecord::Migration
   def change
-    create_table :visaruns do |t|
+    create_table :posts do |t|
 
       t.timestamps null: false
     end

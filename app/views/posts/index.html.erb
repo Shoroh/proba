@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Visaruns</h1>
+<h1>Listing posts</h1>
 
 <table>
   <thead>
@@ -10,11 +10,11 @@
   </thead>
 
   <tbody>
-    <% @visaruns.each do |visarun| %>
+    <% @posts.each do |post| %>
       <tr>
-        <td><%= link_to 'Show', visarun %></td>
-        <td><%= link_to 'Edit', edit_visarun_path(visarun) %></td>
-        <td><%= link_to 'Destroy', visarun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </tr>
     <% end %>
@@ -23,4 +23,4 @@
 
 <br>
 <%= button_to "Cancel my account", registration_path(:user), data: { confirm: "Are you sure?"  , method: :delete }, class: 'btn btn-warning' if signed_in?%>
-<%= link_to 'New Visarun', new_visarun_path %>
+<%= link_to 'New Post', new_post_path %>
