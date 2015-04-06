@@ -22,5 +22,5 @@
 </table>
 
 <br>
-<%= button_to "Cancel my account", registration_path(:user), data: { confirm: "Are you sure?"  , method: :delete }, class: 'btn btn-warning' if signed_in?%>
+<%= button_to "Cancel my account", registration_path(:user), data: { confirm: "Are you sure?"}, method: :delete, class: 'btn btn-warning' if signed_in?%>
 <%= link_to 'New Post', new_post_path %>
