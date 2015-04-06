@@ -5,6 +5,7 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
+  config.secret_key_base = 'ffe571412477f775028ade10986c80efe89d990700b6ef7fbf95abee8148aa5a175d09b897ef582d2313d3b9ead7c2bccab293e67370d954034d48163714e7c3'
 
   # Do not eager load code on boot.
   config.eager_load = false
